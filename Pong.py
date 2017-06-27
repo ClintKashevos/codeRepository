@@ -10,11 +10,8 @@ trumpet = '/Users/ckashevos/Documents/Automation/BeautifulConnect4/trumpet.mp3'
 #trumpet = 'C:/Users/ckashevos/Documents/Automation/New folder/trumpet.mp3'
 pygame.mixer.init()
 
-
-
 def getScreenWidth():
 	return 900
-
 def getScreenHeight():
 	return 600
 
@@ -38,7 +35,6 @@ class Game:
 				pygame.mixer.music.load(trumpet)
 				pygame.mixer.music.play()
 		return winner
-
 
 	def oneUp(self):
 		self.playerOne.moveUp()
@@ -72,7 +68,6 @@ class Game:
 		print ('Player Two: ' + str(self.PlayerTwoScore))
 		if self.PlayerTwoScore >= 10:
 			print ('Joshua is master of the known universe')
-
 
 class Point:
 	def __init__ (self, xRec, yRec):
